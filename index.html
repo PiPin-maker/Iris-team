@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Iris</title>
+  <!-- Важно: используем url_for для подключения CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <span class="logo">ВАШ_ТЕКСТ1</span>
+    <nav class="menu">
+      <a href="#">ваш_текст2</a>
+      <a href="#">ваш_текст3</a>
+      <a href="#">ваш_текст4</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h1>ВАШ_ТЕКСТ5</h1>
+    <p>ваш_текст6</p>
+  </div>
+</header>
+
+<section class="gallery">
+  <img src="{{ url_for('static', filename='ваше_фото1.png') }}" alt="">
+  <img src="{{ url_for('static', filename='ваше_фото2.png') }}" alt="">
+  <img src="{{ url_for('static', filename='ваше_фото3.png') }}" alt="">
+  <img src="{{ url_for('static', filename='ваше_фото4.png') }}" alt="">
+</section>
+
+<section class="hits">
+  <h2>ВАШ_ТЕКСТ7</h2>
+
+  <div class="hit-card">
+    <img src="{{ url_for('static', filename='ваше_фото5.png') }}" alt="">
+    <div>
+      <h3>ВАШ_ТЕКСТ8</h3>
+      <p>ваш_текст9</p>
+    </div>
+  </div>
+
+  <div class="hit-card">
+    <img src="{{ url_for('static', filename='ваше_фото6.png') }}" alt="">
+    <div>
+      <h3>ВАШ_ТЕКСТ10</h3>
+      <p>ваш_текст11</p>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <img src="{{ url_for('static', filename='ваше_фото7.png') }}" alt="">
+  <div class="banner-text">
+    <h2>ВАШ_ТЕКСТ12</h2>
+    <p>ваш_текст13</p>
+  </div>
+</section>
+
+<section class="about">
+  <h2>ВАШ_ТЕКСТ14</h2>
+  <p>ваш_текст15</p>
+</section>
+
+<footer class="footer">
+  <p>ВАШ_ТЕКСТ16</p>
+</footer>
+
+</body>
+</html>
