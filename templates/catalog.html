@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Iris — Каталог</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <span class="logo">IRIS</span>
+
+    <nav class="menu">
+      <a href="/">главная</a>
+      <a href="/catalog">каталог</a>
+      <a href="/photosessions">фотосессии</a>
+      <a href="/lookbooks">лукбуки</a>
+      <a href="/help">справка</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h1>Каталог</h1>
+    <p>Откройте для себя наши коллекции одежды и мерч</p>
+  </div>
+</header>
+
+<main class="catalog-page">
+
+  <div class="main-catalogs">
+
+    <!-- Мужская одежда -->
+    <div class="main-catalog">
+      Мужская одежда
+      <div class="sub-catalog">
+        <div class="sub-item">Верхняя одежда</div>
+        <div class="sub-item">Рубашки, блузки</div>
+        <div class="sub-item">Жакеты, жилетки</div>
+        <div class="sub-item">Брюки</div>
+        <div class="sub-item">Майки, топы</div>
+        <div class="sub-item">Образы</div>
+        <div class="sub-item">Дополнения к образам</div>
+      </div>
+    </div>
+
+    <!-- Женская одежда -->
+    <div class="main-catalog">
+      Женская одежда
+      <div class="sub-catalog">
+        <div class="sub-item">Верхняя одежда</div>
+        <div class="sub-item">Платья</div>
+        <div class="sub-item">Рубашки, блузки</div>
+        <div class="sub-item">Жакеты, жилетки</div>
+        <div class="sub-item">Брюки, юбки</div>
+        <div class="sub-item">Майки, топы</div>
+        <div class="sub-item">Образы</div>
+        <div class="sub-item">Дополнения к образам</div>
+      </div>
+    </div>
+
+    <!-- Мерч бренда -->
+    <div class="main-catalog">
+      Мерч бренда
+      <div class="sub-catalog">
+        <div class="sub-item">Кружки</div>
+        <div class="sub-item">Шопера</div>
+        <div class="sub-item">Футболки</div>
+        <div class="sub-item">Толстовки</div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>Iris — мифология, форма, стиль</p>
+</footer>
+
+</body>
+</html>
