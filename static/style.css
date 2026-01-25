@@ -1,0 +1,211 @@
+:root {
+  --yellow: #fff599;
+  --beige: #efc871;
+  --red: #b23a2f;
+  --burgundy: #ffffff;
+  --white: #ffffff;
+  --dark: #1c1c1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background: #6c4c65;
+  color: var(--yellow);
+}
+
+/* ================= Header ================= */
+.header {
+  background: linear-gradient(180deg, var(--burgundy), var(--yellow));
+  color: #935959;
+  padding: 40px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.menu a {
+  color: #935959;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Hero ================= */
+.hero {
+  margin-top: 40px;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* ================= About ================= */
+.about {
+  padding: 80px 60px;
+  background: #efc871;
+}
+
+.about h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #935959;
+}
+
+.about p {
+  color: #935959;
+  margin-bottom: 15px;
+}
+
+.method-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ================= Team ================= */
+.team {
+  padding: 60px;
+  background: #684368;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 38px;
+  color: var(--yellow);
+  margin-bottom: 40px;
+}
+
+.team-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: rgba(255, 245, 153, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.team-card div {
+  max-width: 500px;
+  text-align: left;
+  color: var(--yellow);
+}
+
+.blur {
+  filter: blur(4px);
+}
+
+/* ================= Contacts ================= */
+.contacts {
+  padding: 60px;
+  background: #6c4c65;
+  color: var(--yellow);
+  text-align: center;
+}
+
+.contacts a {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+/* ================= Footer ================= */
+.footer {
+  background: linear-gradient(
+0deg, #ffffff, #6c4c65);
+  color: #3d3c2a;
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}
+
+/* ================= Catalog ================= */
+.catalog-section {
+  padding: 150px;
+  background: #6c4c65;
+  text-align: center;
+}
+
+.catalog-main-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.catalog-main-card {
+  background: rgba(255, 245, 153, 0.2);
+  border-radius: 10px;
+  padding: 40px 20px;
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-main-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.catalog-subgrid {
+  display: none; /* скрыты по умолчанию */
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.catalog-subcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.catalog-card {
+  background: rgba(255, 245, 153, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.catalog-card p {
+  color: var(--yellow);
+  font-size: 16px;
+  margin: 0;
+}
